@@ -3,10 +3,10 @@ service danted stop > /dev/null 2>&1
 rm /etc/danted -rf 
 
 VERSION="v1.4.1"
-DEFAULT_PORT="1080"
-DEFAULT_USER="danted"
-DEFAULT_PAWD="danted"
-MASTER_IP="github.com"
+DEFAULT_PORT="5566"
+DEFAULT_USER="123"
+DEFAULT_PAWD="123"
+MASTER_IP="52.250.111.12"
 SERVERIP=$(ip addr | grep "inet " | grep -Ev '127.0.0.1|192.168.0|10.0.0' | awk '{print $2}' | sed -e 's/\/.*//')
 if [ -z "$SERVERIP" ]; then
     SERVERIP=$(ifconfig | grep 'inet addr' | grep -Ev 'inet addr:127.0.0|inet addr:192.168.0|inet addr:10.0.0' | sed -n 's/.*inet addr:\([^ ]*\) .*/\1/p')
