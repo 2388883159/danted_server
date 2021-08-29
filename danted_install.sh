@@ -3,7 +3,7 @@ service danted stop > /dev/null 2>&1
 rm /etc/danted -rf 
 
 VERSION="v1.4.1"
-DEFAULT_PORT="5566"
+DEFAULT_PORT="3333"
 DEFAULT_USER="123"
 DEFAULT_PAWD="123"
 MASTER_IP="52.250.111.12"
